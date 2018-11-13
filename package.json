@@ -1,0 +1,31 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "用babel转换语法",
+  "main": "app/main.js",
+  "scripts": {
+    "babel": "rimraf babel && babel src -d babel && uglifyjs.bat",
+    "babel-dev": "rimraf babel && babel src -d babel",
+    "webpack": "rimraf dist && cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "webpack-dev": "rimraf dist && cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "server": "browser-sync start --server --files ./dist,./babel,index.html "
+  },
+  "publishPath": {},
+  "author": "Echo",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "cross-env": "^5.2.0",
+    "path": "^0.12.7",
+    "uglify-js": "^3.4.9",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.6.0",
+    "webpack-cli": "^3.1.2"
+  }
+}

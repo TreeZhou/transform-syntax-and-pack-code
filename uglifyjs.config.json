@@ -1,0 +1,11 @@
+{
+    "compress": false,
+    "mangle": {
+        "toplevel": true
+    },
+    "output": {
+        "comments": true,
+        "beautify": false
+    },
+    "sourceMap": false
+}
