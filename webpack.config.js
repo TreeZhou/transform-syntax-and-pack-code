@@ -1,6 +1,6 @@
 // 配置参数
-var sourceMap = true; //是否使用sourceMap
-var libraryName = "main" //生成包的名字
+var sourceMap = false; //是否使用sourceMap
+var libraryName = "vframeplayer" //生成包的名字
 
 
 var path = require("path");
