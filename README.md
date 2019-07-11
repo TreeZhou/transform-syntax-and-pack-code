@@ -2,8 +2,11 @@
 
 - 语法转换 ：将src文件夹下的js文件转换陈es5语法，并保存在babel文件夹下   
     命令 `npm run babel-dev`开发版本（不压缩）  
-    命令 `npm run babel`发布版本
-    
+    命令 `npm run babel`发布版本(win系统才有效果)
+
+     mac 需要手动使用`glifyjs`命令压缩JS代码    
+     "uglifyjs babel/index.js --config-file uglifyjs.config.json -o uglify.js",
+ - 
 - 打包：    
 以src文件夹下的index.js为入口文件，打包代码     
 命令     
@@ -13,3 +16,4 @@
 - 打开本地服务器测试脚本
  命令   
  `npm run server`打开本地服务器测试代码
+
